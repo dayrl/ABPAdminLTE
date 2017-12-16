@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Wing.ABPAdminLTE.Identity;
 
 namespace Wing.ABPAdminLTE.Web.Startup
 {
@@ -26,6 +27,8 @@ namespace Wing.ABPAdminLTE.Web.Startup
             {
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
+
+            IdentityRegistrar.Register(services);
 
             //Configure Abp and Dependency Injection
             return services.AddAbp<ABPAdminLTEWebModule>(options =>
@@ -57,7 +60,7 @@ namespace Wing.ABPAdminLTE.Web.Startup
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Account}/{action=Login}/{id?}");
             });
         }
     }

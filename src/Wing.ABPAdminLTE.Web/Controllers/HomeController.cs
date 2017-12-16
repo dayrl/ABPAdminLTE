@@ -4,12 +4,12 @@ namespace Wing.ABPAdminLTE.Web.Controllers
 {
     public class HomeController : ABPAdminLTEControllerBase
     {
-        public ActionResult Index()
+        public IActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        public IActionResult About()
         {
             return View();
         }
