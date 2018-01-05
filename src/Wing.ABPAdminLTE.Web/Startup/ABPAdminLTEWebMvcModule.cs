@@ -12,12 +12,13 @@ namespace Wing.ABPAdminLTE.Web.Startup
     [DependsOn(
         typeof(ABPAdminLTEApplicationModule), 
         typeof(ABPAdminLTEEntityFrameworkCoreModule), 
-        typeof(AbpAspNetCoreModule))]
-    public class ABPAdminLTEWebModule : AbpModule
+        typeof(AbpAspNetCoreModule),
+        typeof(ABPAdminLTEWebCoreModule))]
+    public class ABPAdminLTEWebMvcModule : AbpModule
     {
         private readonly IConfigurationRoot _appConfiguration;
 
-        public ABPAdminLTEWebModule(IHostingEnvironment env)
+        public ABPAdminLTEWebMvcModule(IHostingEnvironment env)
         {
             _appConfiguration = AppConfigurations.Get(env.ContentRootPath, env.EnvironmentName);
         }
@@ -36,7 +37,7 @@ namespace Wing.ABPAdminLTE.Web.Startup
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(ABPAdminLTEWebModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(ABPAdminLTEWebMvcModule).GetAssembly());
         }
     }
 }

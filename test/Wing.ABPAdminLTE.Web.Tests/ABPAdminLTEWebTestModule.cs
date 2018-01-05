@@ -7,7 +7,7 @@ using Wing.ABPAdminLTE.Web.Startup;
 namespace Wing.ABPAdminLTE.Web.Tests
 {
     [DependsOn(
-        typeof(ABPAdminLTEWebModule),
+        typeof(ABPAdminLTEWebMvcModule),
         typeof(AbpAspNetCoreTestBaseModule)
         )]
     public class ABPAdminLTEWebTestModule : AbpModule

@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/Wing.ABPAdminLTE.Web.Mvc",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:62114/",
       "sslPort": 0
@@ -16,9 +20,9 @@
       }
     },
     "Wing.ABPAdminLTE.Web": {
-      "commandName": "Project",
+      "commandName": "IIS",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5000",
+      "launchUrl": "http://localhost:5009",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

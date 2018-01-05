@@ -11,7 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Wing.ABPAdminLTE.Identity;
 using Wing.ABPAdminLTE.Web.Resources;
+<<<<<<< HEAD
 using Wing.ABPAdminLTE.Authentication.JwtBearer;
+=======
+>>>>>>> fe8cabbdd01669f3ce526ba7899a1ea2f8ea1478
 
 namespace Wing.ABPAdminLTE.Web.Startup
 {
@@ -32,10 +35,17 @@ namespace Wing.ABPAdminLTE.Web.Startup
 
             IdentityRegistrar.Register(services);
 
+<<<<<<< HEAD
 			services.AddScoped<IWebResourceManager, WebResourceManager>();
 
 			//Configure Abp and Dependency Injection
 			return services.AddAbp<ABPAdminLTEWebModule>(options =>
+=======
+            services.AddScoped<IWebResourceManager, WebResourceManager>();
+
+            //Configure Abp and Dependency Injection
+            return services.AddAbp<ABPAdminLTEWebMvcModule>(options =>
+>>>>>>> fe8cabbdd01669f3ce526ba7899a1ea2f8ea1478
             {
                 //Configure Log4Net logging
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
@@ -46,7 +56,8 @@ namespace Wing.ABPAdminLTE.Web.Startup
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseAbp(); //Initializes ABP framework.
+            app.UseAbp(options => { options.UseAbpRequestLocalization = false; });  //Initializes ABP framework.
+            app.UseAbpRequestLocalization();
 
             if (env.IsDevelopment())
             {
@@ -59,6 +70,7 @@ namespace Wing.ABPAdminLTE.Web.Startup
             }
 
             app.UseStaticFiles();
+<<<<<<< HEAD
 
 
 			app.UseAuthentication();
@@ -75,5 +87,14 @@ namespace Wing.ABPAdminLTE.Web.Startup
 					template: "{controller=Home}/{action=Index}/{id?}");
 			});
 		}
+=======
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Account}/{action=Login}/{id?}");
+            });
+        }
+>>>>>>> fe8cabbdd01669f3ce526ba7899a1ea2f8ea1478
     }
 }

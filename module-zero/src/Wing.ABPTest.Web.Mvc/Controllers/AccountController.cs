@@ -75,6 +75,7 @@ namespace Wing.ABPTest.Web.Controllers
 
         public ActionResult Login(string userNameOrEmailAddress = "", string returnUrl = "", string successMessage = "")
         {
+
             if (string.IsNullOrWhiteSpace(returnUrl))
             {
                 returnUrl = GetAppHomeUrl();
