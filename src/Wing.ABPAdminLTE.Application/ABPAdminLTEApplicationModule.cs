@@ -1,6 +1,7 @@
 ﻿using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Wing.ABPAdminLTE.Authorization;
 
 namespace Wing.ABPAdminLTE
 {
@@ -9,7 +10,11 @@ namespace Wing.ABPAdminLTE
         typeof(AbpAutoMapperModule))]
     public class ABPAdminLTEApplicationModule : AbpModule
     {
-        public override void Initialize()
+		public override void PreInitialize()
+		{
+			Configuration.Authorization.Providers.Add<ABPAdminLTEAuthorizationProvider>();
+		}
+		public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(ABPAdminLTEApplicationModule).GetAssembly());
         }

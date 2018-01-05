@@ -14,7 +14,7 @@ namespace Wing.ABPAdminLTE.EntityFrameworkCore
             var builder = new DbContextOptionsBuilder<ABPAdminLTEDbContext>();
             var configuration = AppConfigurations.Get(WebContentDirectoryFinder.CalculateContentRootFolder());
 
-            DbContextOptionsConfigurer.Configure(
+            ABPAdminLTEDbContextOptionsConfigurer.Configure(
                 builder,
                 configuration.GetConnectionString(ABPAdminLTEConsts.ConnectionStringName)
             );

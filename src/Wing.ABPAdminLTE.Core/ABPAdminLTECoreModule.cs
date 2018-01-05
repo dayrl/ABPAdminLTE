@@ -1,5 +1,6 @@
 ﻿using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Abp.Timing;
 using Abp.Zero;
 using Abp.Zero.Configuration;
 using Wing.ABPAdminLTE.Authorization.Roles;
@@ -7,6 +8,7 @@ using Wing.ABPAdminLTE.Authorization.Users;
 using Wing.ABPAdminLTE.Configuration;
 using Wing.ABPAdminLTE.Localization;
 using Wing.ABPAdminLTE.MultiTenancy;
+using Wing.ABPAdminLTE.Timing;
 
 namespace Wing.ABPAdminLTE
 {
@@ -37,5 +39,10 @@ namespace Wing.ABPAdminLTE
         {
             IocManager.RegisterAssemblyByConvention(typeof(ABPAdminLTECoreModule).GetAssembly());
         }
-    }
+
+		public override void PostInitialize()
+		{
+			IocManager.Resolve<AppTimes>().StartupTime = Clock.Now;
+		}
+	}
 }

@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Wing.ABPAdminLTE.Identity;
+using Wing.ABPAdminLTE.Web.Resources;
+using Wing.ABPAdminLTE.Authentication.JwtBearer;
 
 namespace Wing.ABPAdminLTE.Web.Startup
 {
@@ -20,7 +22,7 @@ namespace Wing.ABPAdminLTE.Web.Startup
             //Configure DbContext
             services.AddAbpDbContext<ABPAdminLTEDbContext>(options =>
             {
-                DbContextOptionsConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
+                ABPAdminLTEDbContextOptionsConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
             });
 
             services.AddMvc(options =>
@@ -30,8 +32,10 @@ namespace Wing.ABPAdminLTE.Web.Startup
 
             IdentityRegistrar.Register(services);
 
-            //Configure Abp and Dependency Injection
-            return services.AddAbp<ABPAdminLTEWebModule>(options =>
+			services.AddScoped<IWebResourceManager, WebResourceManager>();
+
+			//Configure Abp and Dependency Injection
+			return services.AddAbp<ABPAdminLTEWebModule>(options =>
             {
                 //Configure Log4Net logging
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
@@ -56,12 +60,20 @@ namespace Wing.ABPAdminLTE.Web.Startup
 
             app.UseStaticFiles();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Account}/{action=Login}/{id?}");
-            });
-        }
+
+			app.UseAuthentication();
+			app.UseJwtTokenMiddleware();
+
+			app.UseMvc(routes =>
+			{
+				routes.MapRoute(
+					name: "defaultWithArea",
+					template: "{area}/{controller=Home}/{action=Index}/{id?}");
+
+				routes.MapRoute(
+					name: "default",
+					template: "{controller=Home}/{action=Index}/{id?}");
+			});
+		}
     }
 }
