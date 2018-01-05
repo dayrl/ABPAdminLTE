@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Wing.ABPAdminLTE.Identity;
 using Wing.ABPAdminLTE.Web.Resources;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace Wing.ABPAdminLTE.Web.Startup
 {
@@ -58,7 +60,13 @@ namespace Wing.ABPAdminLTE.Web.Startup
                 app.UseExceptionHandler("/Error");
             }
 
+            //使用静态文件
             app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory())
+            });
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
