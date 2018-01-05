@@ -36,5 +36,17 @@
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js",
       "wwwroot/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js"
     ]
+  },
+  {
+    "outputFileName": "wwwroot/view-resources/Views/Account/Login.min.js",
+    "inputFiles": [
+      "wwwroot/view-resources/Views/Account/Login.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/bower_components/bootstrap/dist/css/bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/bower_components/bootstrap/dist/css/bootstrap.css"
+    ]
   }
 ]

@@ -2,7 +2,7 @@
 using System.IO;
 using Abp.Reflection.Extensions;
 
-namespace Wing.ABPTest
+namespace Wing.ABPAdminLTE
 {
     /// <summary>
     /// Central point for application version.

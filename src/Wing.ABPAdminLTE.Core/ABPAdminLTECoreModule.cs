@@ -1,5 +1,7 @@
-﻿using Abp.Modules;
+﻿using Abp.Localization;
+using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Abp.Timing;
 using Abp.Zero;
 using Abp.Zero.Configuration;
 using Wing.ABPAdminLTE.Authorization.Roles;
@@ -7,6 +9,7 @@ using Wing.ABPAdminLTE.Authorization.Users;
 using Wing.ABPAdminLTE.Configuration;
 using Wing.ABPAdminLTE.Localization;
 using Wing.ABPAdminLTE.MultiTenancy;
+using Wing.ABPAdminLTE.Timing;
 
 namespace Wing.ABPAdminLTE
 {
@@ -24,6 +27,7 @@ namespace Wing.ABPAdminLTE
 
             ABPAdminLTELocalizationConfigurer.Configure(Configuration.Localization);
 
+
             // Enable this line to create a multi-tenant application.
             Configuration.MultiTenancy.IsEnabled = ABPAdminLTEConsts.MultiTenancyEnabled;
 
@@ -36,6 +40,11 @@ namespace Wing.ABPAdminLTE
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(ABPAdminLTECoreModule).GetAssembly());
+        }
+
+        public override void PostInitialize()
+        {
+            IocManager.Resolve<AppTimes>().StartupTime = Clock.Now;
         }
     }
 }

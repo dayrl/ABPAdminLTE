@@ -2,7 +2,7 @@
 using Abp.Localization;
 using Microsoft.AspNetCore.Http;
 
-namespace Wing.ABPAdminLTE.Web.Views.Shared.Components.LanguageSelection
+namespace Wing.ABPAdminLTE.Web.Views.Shared.Components.AccountLanguages
 {
     public class LanguageSelectionViewModel
     {

@@ -1,0 +1,17 @@
+﻿@using System.Text.Encodings.Web
+@using Wing.ABPAdminLTE.Web.Views.Shared.Components.AccountLanguages
+@model LanguageSelectionViewModel
+
+<link href="/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css" rel="stylesheet"/>
+
+@if (Model.Languages.Count > 1)
+{
+<div class="language-switch-area">
+    @foreach (var languageInfo in Model.Languages)
+    {
+        <a href="~/AbpLocalization/ChangeCulture?cultureName=@(languageInfo.Name)&returnUrl=@(UrlEncoder.Default.Encode(Context.Request.Path + Context.Request.QueryString))">
+            <span class="language-icon @(languageInfo == Model.CurrentLanguage ? "language-icon-current" : "")" title="@languageInfo.DisplayName"><img class="@languageInfo.Icon"></span>
+        </a>
+    }
+</div>
+}

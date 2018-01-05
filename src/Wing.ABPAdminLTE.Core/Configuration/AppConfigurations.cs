@@ -38,6 +38,7 @@ namespace Wing.ABPAdminLTE.Configuration
 
             if (addUserSecrets)
             {
+                var test = typeof(AppConfigurations).GetAssembly();
                 builder.AddUserSecrets(typeof(AppConfigurations).GetAssembly());
             }
 
