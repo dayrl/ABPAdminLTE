@@ -1,0 +1,8 @@
+-p C:\Program Files\dotnet\dotnet.exe
+-pidFile D:\GitHub\ABPAdminLTE\src\Wing.ABPAdminLTE.Web\bin\IISSupport\pidfile.txt
+-wd D:\GitHub\ABPAdminLTE\src\Wing.ABPAdminLTE.Web
+-a exec "D:\GitHub\ABPAdminLTE\src\Wing.ABPAdminLTE.Web\bin\Debug\netcoreapp2.0\Wing.ABPAdminLTE.Web.dll"
+-pipe 7c67f279-4937-45c7-986c-5fb3e016a708
+-pr Wing.ABPAdminLTE.Web.Mvc
+-owningPid 16740
+-env ASPNETCORE_CONTENTROOT=D:\GitHub\ABPAdminLTE\src\Wing.ABPAdminLTE.Web|DOTNET_ADDITIONAL_DEPS=C:\Program Files\dotnet\additionalDeps\Microsoft.AspNetCore.ApplicationInsights.HostingStartup|ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=Microsoft.AspNetCore.ApplicationInsights.HostingStartup|ASPNETCORE_ENVIRONMENT=Development|COMPLUS_ForceENC=1|

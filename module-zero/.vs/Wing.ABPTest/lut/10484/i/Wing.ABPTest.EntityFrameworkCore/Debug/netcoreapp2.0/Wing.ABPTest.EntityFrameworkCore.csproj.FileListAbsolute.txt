@@ -1,0 +1,13 @@
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.dll.config
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.deps.json
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.runtimeconfig.json
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.runtimeconfig.dev.json
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.dll
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.pdb
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.csprojResolveAssemblyReference.cache
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.dll.config
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.AssemblyInfoInputs.cache
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.AssemblyInfo.cs
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.dll
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.EntityFrameworkCore\Debug\netcoreapp2.0\Wing.ABPTest.EntityFrameworkCore.pdb

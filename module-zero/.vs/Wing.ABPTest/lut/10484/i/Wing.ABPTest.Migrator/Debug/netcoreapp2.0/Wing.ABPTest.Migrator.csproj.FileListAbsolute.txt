@@ -1,0 +1,12 @@
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\appsettings.json
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\log4net.config
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.deps.json
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.runtimeconfig.json
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.runtimeconfig.dev.json
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.dll
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.pdb
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.csproj.CoreCompileInputs.cache
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.AssemblyInfoInputs.cache
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.AssemblyInfo.cs
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.dll
+D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Migrator\Debug\netcoreapp2.0\Wing.ABPTest.Migrator.pdb
