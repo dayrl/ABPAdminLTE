@@ -1,9 +1,0 @@
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.deps.json
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.dll
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\b\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.pdb
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.csprojResolveAssemblyReference.cache
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.csproj.CoreCompileInputs.cache
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.AssemblyInfoInputs.cache
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.AssemblyInfo.cs
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.dll
-D:\GitHub\ABPAdminLTE\module-zero\.vs\Wing.ABPTest\lut\0\i\Wing.ABPTest.Core\Debug\netcoreapp2.0\Wing.ABPTest.Core.pdb
