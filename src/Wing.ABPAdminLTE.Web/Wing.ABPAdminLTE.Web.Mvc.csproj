@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
     <PreserveCompilationContext>true</PreserveCompilationContext>
-    <AssemblyName>Wing.ABPAdminLTE.Web</AssemblyName>
+    <AssemblyName>Wing.ABPAdminLTE.Web.Mvc</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>Wing.ABPAdminLTE.Web</PackageId>
     <UserSecretsId>Wing-ABPAdminLTE-56C2EF2F-ABD6-4EFC-AAF2-2E81C34E8FB1</UserSecretsId>

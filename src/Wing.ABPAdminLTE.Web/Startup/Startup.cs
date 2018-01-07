@@ -20,13 +20,13 @@ namespace Wing.ABPAdminLTE.Web.Startup
     {
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            //Configure DbContext
-            services.AddAbpDbContext<ABPAdminLTEDbContext>(options =>
-            {
-                DbContextOptionsConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
-            });
+			//Configure DbContext
+			services.AddAbpDbContext<ABPAdminLTEDbContext>(options =>
+			{
+				DbContextOptionsConfigurer.Configure(options.DbContextOptions, options.ConnectionString);
+			});
 
-            services.AddMvc(options =>
+			services.AddMvc(options =>
             {
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
@@ -62,10 +62,6 @@ namespace Wing.ABPAdminLTE.Web.Startup
 
             //使用静态文件
             app.UseStaticFiles();
-            app.UseStaticFiles(new StaticFileOptions()
-            {
-                FileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory())
-            });
 
             app.UseMvc(routes =>
             {

@@ -71,6 +71,7 @@ namespace Wing.ABPAdminLTE.Web.Mvc.Controllers
 
         public IActionResult Login(string userNameOrEmailAddress = "", string returnUrl = "", string successMessage = "")
         {
+			var test = L("WellcomeMessage");
             if (string.IsNullOrWhiteSpace(returnUrl))
             {
                 returnUrl = GetAppHomeUrl();

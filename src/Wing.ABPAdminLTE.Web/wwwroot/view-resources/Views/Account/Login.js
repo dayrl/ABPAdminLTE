@@ -4,10 +4,6 @@
     $loginForm.submit(function (e) {
         e.preventDefault();
 
-        if (!$loginForm.valid()) {
-            return;
-        }
-
         abp.ui.setBusy(
             $('#LoginArea'),
 
